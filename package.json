@@ -2,6 +2,9 @@
   "name": "app",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "devstart": "SLACK_LOG_LEVEL='debug' node index.js"
+  },
   "license": "MIT",
   "dependencies": {
     "@slack/bolt": "^3.7.0"

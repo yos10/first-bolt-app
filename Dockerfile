@@ -9,3 +9,4 @@ ENV TZ Asia/Tokyo
 WORKDIR /app
 COPY package.json .
 RUN yarn install
+CMD ["node", "index.js"]
