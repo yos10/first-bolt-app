@@ -6,3 +6,5 @@ node_modules
 .gitignore
 .github
 .env
+Procfile
+README.md
