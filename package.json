@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "devstart": "SLACK_LOG_LEVEL='debug' node app.js"
   },
   "license": "MIT",
   "dependencies": {
-    "@slack/bolt": "^3.7.0"
+    "@slack/bolt": "^3.7.0",
+    "dotenv": "^10.0.0"
   }
 }
