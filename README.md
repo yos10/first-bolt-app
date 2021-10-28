@@ -19,5 +19,7 @@ cp .env.example .env
 .env ファイルにキーを入力
 
 # Worker dyno で実行するように変更
-Heroku のサイトでアプリを選択後、画面上部の Resources タブをクリックし、 ```worker node app.js``` のスイッチを ON にする。
+Heroku のサイトでアプリを選択後、画面上部の Resources タブをクリックし、  
+```worker node app.js``` のスイッチを ON にする。
 
+注意点: [Heroku のドキュメント](https://devcenter.heroku.com/ja/articles/free-dyno-hours#dyno-sleeping)にあるとおり、Worker dyno は 24 時間年中無休で実行可能であり無料枠を使い切ってしまうため、動作を確認したらスイッチを OFF にする。
